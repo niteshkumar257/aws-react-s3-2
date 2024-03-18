@@ -5,7 +5,31 @@ name: Node.js CI
 
 on:
   push:
-    branches: [ "main" ]
+    branches: [ "main" ]name: s3-depl
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Configure AWS Credentials
+        uses: aws-actions/configure-aws-credentials@v1
+        with:
+          aws-access-key-id: AKIAQ3EGU2JX2DZP5GJ5
+          aws-secret-access-key: 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
+          aws-region: us-east-1
+      - name: Build React App
+        run: npm install && npm run build 
+      - name: Deploy app build to S3 bucket
+        run: aws s3 sync ./build s3://react-s3-2 --delete
+      - name: Invalidate cache
+        run: aws cloudfront create-invalidation --distribution-id E231LA335N0U13 --paths "/*"
+     
   
 jobs:
   build:
