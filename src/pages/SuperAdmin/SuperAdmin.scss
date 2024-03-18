@@ -1,0 +1,61 @@
+$main-color:#1377C0;
+.superAdmin-container
+{
+display: flex;
+width: 100%;
+
+
+
+.superAdmin{
+    flex: 4;
+  
+    .superAdmin-page{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: "center";
+        gap: 20px;
+        height: auto;
+        .superAdmin-container-search
+        {
+          display: flex;
+          flex-direction: column;
+          row-gap: 10px;
+        
+        span{
+            font-size: 1.5rem;
+            color: rgb(0, 0, 0);
+            font-weight: 500;
+        }
+        .superAdmin-detail-search{
+            display: flex;
+            gap: 10px;
+            
+            input{
+                flex: 1;
+                width: 140px;
+                height: 50px;
+                padding-left:4px ;
+                 border-radius: 9px;
+                 border: 1px solid gray;
+            }
+            .superAdmin-detail-search-btn{
+                flex: 1;
+                button{
+                    height: 54px;
+                    width: 150px;
+                    background-color:$main-color;
+                    color: white;
+                font-weight: 600;
+                font-size: 1rem;
+                    border-radius: 9px;
+                    border: none;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+       
+    }
+}
+}

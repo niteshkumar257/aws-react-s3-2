@@ -1,0 +1,11 @@
+.task-details {
+    display: flex;
+    flex-direction: column;
+
+    .each-details {
+        display: flex;
+        .heading-name{
+            min-width: 30%;
+        }
+    }
+}

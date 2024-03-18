@@ -1,0 +1,489 @@
+$main-color:#1377C0;
+$sub-heading:rgb(83, 83, 83);
+$container-bottom-border:.2px solid rgb(227, 227, 227);;
+.SingleStudent-container
+{
+    display: flex;
+   
+    .singleStudent{
+        flex: 4;
+        .singleStudentPage-container{
+  
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+          
+            // width: 100%;
+           row-gap: 20px;
+            height: auto;
+           .student-info-main-container{
+            // box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+              display: flex;
+             
+              width: 98%;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+             border-radius: 9px;
+              
+            .student-info-heading{
+               
+                border-radius: 9px;
+                width: 98%;
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+               
+                padding-left: 1rem;
+               
+                h1{
+                    font-size: 1.3rem;
+                    font-weight: 700;
+                    color: rgb(83, 83, 83);
+        
+                }
+            }
+          
+            .section{
+               
+                width: 98%;
+               
+                 height: auto;
+                flex: 1;
+                border-radius: 0px;
+            border-bottom: $container-bottom-border;
+                
+                }
+                .basic-info{
+                    padding: 0.5rem;
+                    border-radius: 0px;
+                    width: 100%;
+                    display: flex;
+                    flex: 1;
+                    flex-direction: row;
+                  
+                  
+                     height: 40vh;
+                    gap: 20px;
+                    
+                    .basic-info-left{
+                        flex: 1;
+                      
+                       
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        .studentImageWrapper{
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            
+                            height: 150px;
+                            width: 150px;
+                            border-radius: 9px;
+                            img{
+                                height: 110px;
+                                width: 110px;
+                            }
+        
+                        }
+        
+        
+                    }
+                    .basic-info-right{
+                         flex:3;
+                         display: flex;
+                         flex-direction: column;
+                         gap:20px;
+                        
+                         .student-Name{
+                            flex: 1;
+                           
+                            display: flex;
+                            justify-content:flex-start;
+                        
+                            align-items: center;
+                            
+                            span{
+                              
+                                font-size: 1.3rem;
+                                font-weight: 600;
+                              color:$sub-heading;
+                          
+        
+                            }
+                         
+                         }
+                         .other-info-container{
+                            flex: 2;
+                            display: flex;
+                       gap:20px;
+                       .other-detail-info-container{
+                           flex: 1;
+                           display: flex;
+                       
+                          justify-content: space-evenly;
+                          align-items: flex-start;
+                        
+                           flex-direction: column;
+                        gap:10px;
+                          
+                           .student{
+                            display: flex;
+                             height: 6vh;
+                              gap:12px;
+                               .lable{
+                                font-size: 1rem;
+                                font-weight: 500;
+                                color: $main-color;
+                            }
+                            span{
+                                font-size: 1rem;
+                                color: $sub-heading;
+                            }
+                              
+                             
+                           }
+                        //    .student{
+                        //     display: flex;
+                        //     // background-color: rgb(42, 231, 231);
+                        //     height: 6vh;
+                        //     gap:12px;
+                        //     .lable{
+                        //         font-size: .9rem;
+                        //         font-weight: 500;
+                        //         color: #1378c09a;
+                        //     }
+                           
+                        //    }
+                        //    .student{
+                        //     display: flex;
+                        //     // background-color: rgb(25, 183, 183);
+                        //     height: 6vh;
+                        //     gap:12px;
+                        //     .lable{
+                        //         font-size: .9rem;
+                        //         font-weight: 500;
+                        //         color: #1378c09a;
+                        //     }
+                            
+        
+                        //    }
+                        //    .student{
+                        //     display: flex;
+                        //     // background-color: rgb(37, 203, 203);
+                        //     height: 6vh;
+                        //     gap:12px;
+                        //     .lable{
+                        //         font-size: .9rem;
+                        //         font-weight: 500;
+                        //         color: #1378c09a;
+                        //     }
+                            
+                        //    }
+                       }
+                         }
+                    }
+               
+            }
+        }
+            // parent info details
+            
+            .parent-info{
+                width: 98%;
+               
+                padding: 0.5rem;
+                // border-radius: 9px;
+        border-bottom: .2px solid rgb(185, 185, 185);
+                // box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+            //    background-color: aquamarine;
+               align-items: center;
+                display: flex;
+                flex: 1;
+                flex-direction: column;
+                gap:20px;
+                padding-left: 1rem;
+                .parent-info-heading{
+                    
+                    width: 98%;
+                    h1{
+                        font-size: 1.3rem;
+                        font-weight: 700;
+                        color:$sub-heading
+        
+                    }
+                }
+                .parent-info-container{
+                    width: 98%;
+                  
+                    flex: 1;
+                    display: flex;
+                    flex-direction: column;
+                    gap:10px;
+                   
+                  
+                    .parent-detail-info-container{
+                       
+                        display: flex;
+                        gap:20px;
+                      
+                        .parent-detail-info-container-subbox{
+                            display: flex;
+                            flex: 1;
+                            gap: 20px;
+                            // background-color: blueviolet;
+                            height: 6vh;
+                            .lable{
+                                font-size: .9rem;
+                                font-weight: 500;
+                                color:$main-color;
+                            }
+                            span{
+                                font-size: 1rem;
+                                color: $sub-heading;
+                               
+                            }
+                            
+                        }
+                    }
+                }
+            }
+            .fee-info{
+              
+               width: 98%;
+                // box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+                border-radius: 9px;
+        padding: 0.5rem;
+        height: auto;
+        
+                .fee-details-heading{
+        
+                    width: 90%;
+                  height: auto;
+                    h1{
+                        font-size: 1.3rem;
+                        font-weight: 700;
+                    color: rgb(83, 83, 83);
+            
+                    }
+                }
+                display: flex;
+                flex-direction: column;
+                flex: 1.5;
+                gap:20px;
+                .top-container{
+                  
+                    flex: 1;
+                    display: flex;
+                    flex-direction:row;
+                     
+               
+                    .total-fee-container{
+                      
+                        width: 100%; 
+                    display: flex;
+                    gap: 12px;
+                   
+                    justify-content: center;
+                    
+                    .left{
+                        padding: 0.5rem;
+                        border-radius: 9px;
+                        box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+                     
+                       height: 100px;
+                     
+                       display: flex;
+                       justify-content: space-around;
+                       gap: 10px;
+                    width: 50vh;
+                   
+                    .fee-amount{
+                        
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                      
+                        span{
+                            font-size: 1rem;
+                           
+                            color:$main-color;
+        
+                        }
+                        h1{
+                            font-size: 1.4rem;
+                            font-weight: 600;
+                            
+                            color:$main-color;
+        
+                        }
+                    }
+                    .feeIcon{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        img{
+                            height: 70px;
+                            width: 70x;
+        
+                        }
+                    }
+                      
+                    }
+                    .right{
+                        flex:3;
+        
+                       
+                    }
+        
+                    }
+                }
+                .bottom{
+                    
+                    flex: 2.5;
+                    display: flex;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 100%;
+                min-height: 20vh;
+                max-height: 70vh;
+                background-color: white;
+                  
+                  
+                   
+                 
+        
+                    
+                  
+                   
+                }
+            }
+            .perfomanceAnalytic-info{
+                height:auto;
+                padding: 0.5rem;
+                display: flex;
+                flex-direction: column;
+                border-radius: 9px;
+                // box-shadow: 0 2px 2px rgb(0 0 0 / 10%), 0 4px 2px rgb(0 0 0 / 10%);
+                width: 98%;
+                row-gap: 20px;
+              
+                .performanceAnalytic-heading{
+                    width: 90%;
+                    height: auto;
+                  
+                      h1{
+                          font-size: 1.3rem;
+                          font-weight: 700;
+                      color:$sub-heading;
+              
+                      }
+                }
+                .performanceAnalytic-toggle-button{
+                    button{
+                     height: 54px;
+                     width: 100px;
+                     background-color:$main-color;
+                            color: white;
+                        font-weight: 600;
+                        font-size: 1rem;
+                            border-radius: 9px;
+                            border: none;
+                            text-decoration: none;
+                           animation: roll-in-right 0.6s ease-out both;
+                           .roll-in-right {
+	animation: roll-in-right 0.6s ease-out both;
+}
+                    }
+                }
+                .performanceAnalytic-body-content{
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    row-gap: 30px;
+                    .performanceAnalytic-body-content-table{
+                        display: flex;
+                        row-gap: 30px;
+                        
+                        
+                       
+                    }
+                    .performanceAnalytic-body-content-charts{
+                        flex: 0.5;
+                        display: flex;
+                        flex-direction: column;
+                        row-gap: 20px;
+            
+                        .container{
+                            display: flex;
+                            flex-direction: column;
+                            row-gap: 20px;
+                            align-items: center;
+                            justify-content: center;
+                          
+                            border-radius: 9px;
+                            height: 40vh;
+                         
+                            .heading{
+                                display: flex;
+                                width: 98%;
+                                align-items: center;
+                                justify-content: space-between;
+                                .head{
+                                    color: rgb(79, 79, 79);
+                                    font-size: 1.2rem;
+                                }
+                                .subhead{
+                                  color:rgb(100, 100, 100);
+                                  font-size: .7rem;
+                                }
+
+                               
+                            }
+                            .content{
+                                width: 98%;
+                                height: 30vh;
+                                display: flex;
+                                justify-content: flex-start;
+                             
+                                padding: 0;
+                              
+
+                            }
+                        }
+                       
+                    }
+                    
+                }
+            }
+        }
+    }
+}
+
+span{
+    font-size: 1.15rem;
+    font-weight: 500;
+    
+ }
+ .paidStatus{
+    color: rgb(38, 217, 38);
+    font-size: 1rem;
+    font-weight: 500;
+ }
+ .unPaidStatus{
+    color: rgb(221, 25, 25);
+    font-size: 1rem;
+    font-weight: 500;  
+ }
+ .performanceStudentContainer{
+     display: flex;
+     flex-direction: row;
+     
+ }
+ .stepChartContainer{
+    flex: 0.5;
+    
+ }

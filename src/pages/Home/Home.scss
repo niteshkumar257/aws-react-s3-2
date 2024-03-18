@@ -1,0 +1,17 @@
+.home-container
+{
+      display: flex;
+    
+     .home{
+      flex: 4;
+      .home-page
+      {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+            padding: 2rem;
+            background-color:rgb(211, 211, 211);
+         
+      }
+     }
+}

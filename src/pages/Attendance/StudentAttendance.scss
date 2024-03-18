@@ -1,0 +1,65 @@
+.attendance-container
+{
+      display: flex;
+    
+     .attendance{
+      flex: 4;
+      .attendance-page
+      {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+          
+            background-color:rgb(255, 255, 255);
+          height: auto;
+          display: flex;
+          flex-direction: column;
+          row-gap: 10px;
+         
+          .attendance-info-container
+          {
+           display: flex; 
+           align-items: center;
+           justify-content: flex-start;
+           height: 8vh;
+           box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+           border-radius: 9px; 
+           .name{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            column-gap: 10px;
+            margin-left: 1%;
+           }
+           .Class{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            margin-left: 7%;
+            column-gap: 10px;
+           }
+             
+          }
+          .calendar-container{
+            height: 66vh;
+            width: auto;
+            border-radius: 9px;
+           
+            display: flex;
+          justify-content: flex-start;
+          align-items: center;
+        
+          padding-top: 10px;
+          padding-bottom: 10px;
+        
+          }
+         
+      }
+     }
+}
+.span-text{
+  font-size: 20px;
+  font-weight: 600;
+}

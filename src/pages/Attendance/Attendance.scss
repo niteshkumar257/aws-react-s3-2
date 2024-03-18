@@ -1,0 +1,42 @@
+.attendance-container {
+  display: flex;
+
+  .attendance {
+    flex: 4;
+
+    .attendance-page {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      .location-container{
+       margin-bottom: 2rem;
+      }
+
+      .attendance-headr {
+        display: flex; 
+        align-items: center; 
+      }
+
+      .attendance-body {
+
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        grid-column-gap: 20px;
+        grid-row-gap: 10px;
+      }
+
+    }
+  }
+}
+.datePicker{
+ 
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.attendance-info-container{
+    height: 200px;
+    margin-bottom: 2rem;
+}

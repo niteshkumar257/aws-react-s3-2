@@ -1,0 +1,78 @@
+$main-color:#1377C0;
+.student-container
+{
+    display: flex;
+   
+    .student{
+        flex: 4;
+        width: 100%;
+        .student-page{
+            display: flex;
+        flex-direction: column;
+        gap: 20px;
+        
+        justify-content: center;
+        // padding: 1rem 0 0 4rem ;
+        
+          
+           
+            .student-detail-heading{
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                span{
+                    font-size: 1.5rem;
+                    color: black;
+                    font-weight: 500;
+                }
+                .student-detail-search{
+                    display: flex;
+                    gap: 10px;
+                    
+                    input{
+                        flex: 1;
+                        width: 140px;
+                        height: 50px;
+                        padding-left:4px ;
+                         border-radius: 9px;
+                         border: 1px solid gray;
+                    }
+                    .student-detail-search-btn{
+                        flex: 1;
+                        button{
+                            height: 54px;
+                            width: 150px;
+                            background-color:$main-color;
+                            color: white;
+                        font-weight: 600;
+                        font-size: 1rem;
+                            border-radius: 9px;
+                            border: none;
+                            text-decoration: none;
+                        }
+                    }
+                }
+            }
+           
+        }
+        }
+    }
+    .viewButtton{
+     
+     button{
+    // background-color: #009df1;
+    cursor: pointer;
+    height: 30px;
+    width: 70px;
+        border-radius: 9px;
+        color: rgb(0, 0, 0);
+        font-size:1rem;
+        // color:white
+      text-decoration: underline;
+    //   text-decoration-color: #009df1;
+        border: none;
+        font-weight: 500;
+        background-color: white;
+     }
+
+    }

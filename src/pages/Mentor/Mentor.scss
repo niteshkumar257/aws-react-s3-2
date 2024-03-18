@@ -1,0 +1,29 @@
+.mentor-schedule-container
+{
+    display: flex;
+   
+    .mentor-schedule{
+        flex: 4;
+        .notification-page{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center; 
+        }
+        span{
+            font-size: 1.5rem;
+            color: rgb(0, 0, 0);
+            font-weight: 500;
+        }
+        .mentor-schedule-table{
+           margin-top: 20px;
+           display: flex;
+        justify-content: flex-start;
+        
+        padding: 0;
+        align-items: center;
+        }
+    }
+
+}
+ 

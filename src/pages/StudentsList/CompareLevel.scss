@@ -1,0 +1,24 @@
+.compareClassContainer{
+    height:auto;
+    width:100%;
+     margin-top:10vh;
+    display:flex;
+    flex-direction: column;
+    row-gap:30px;
+    .compareClassTopContainer
+    {
+      height: 5vh;
+    }
+    .compareClassBottomContainer
+    {
+       min-height:40vh;
+       height: auto;
+       .selectCotainer{
+       display: grid;
+       grid-template-columns:auto auto;
+        row-gap: 1rem;
+       column-gap: 1rem;
+        padding: 20px;
+       }
+    }
+}

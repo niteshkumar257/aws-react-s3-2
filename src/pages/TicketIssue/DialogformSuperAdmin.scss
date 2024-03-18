@@ -1,0 +1,90 @@
+.cancelButton{
+    height: 50px;
+    width:100px;
+    background-color: red;
+    text-decoration: none;
+  color:white;
+  font-size: 15;
+  font-weight: bold;
+}
+.approveButton{
+    height: 50px;
+    width: 100px;
+    background-color: rgb(68, 246, 68);
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 15;
+    font-weight: bold;
+}
+.replieContainer{
+    height: 100px;
+    margin-top: 10px;
+    .senderReplay{
+        height: 90px;
+        
+    }
+}
+.label{
+     font-size: 16px; /* Adjust the font size as needed */
+  font-weight: bold
+  
+}
+.text{
+    font-size: 14px;
+}
+.chatContainer {
+  min-height: 0;
+    display: flex;
+    flex-direction: column;
+    max-height: 300px;
+    overflow-y: auto;
+    column-gap: 4px;
+    padding: 10px 0px;
+   
+  }
+  
+  .chatMessage {
+    display: flex;
+   
+   
+  
+   }
+  
+  .left {
+    align-items: flex-end;
+    justify-content: flex-start;
+    
+  }
+  
+  .right {
+    justify-content:flex-end ;
+    align-items: flex-start;
+    
+  }
+  
+  .chatMessage.left p {
+    padding: 8px;
+    background-color: #d7ffe0;
+    border-radius: 8px;
+    color:rgb(0, 0, 0);
+  }
+  
+  .chatMessage.right p {
+    background-color: #b8dfff;
+    padding: 8px;
+    border-radius: 8px;
+    color:rgb(0, 0, 0)
+  }
+  
+  .chatMessage span {
+    margin-left: 0px;
+    color: #888888;
+    font-size: 10px;
+  }p
+  {
+    font-size:12px;
+  }.inputMessage{
+    height: 100px;
+    margin-top: 40px;
+
+  }

@@ -1,0 +1,56 @@
+.each-task-card-container {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.each-task-card-heading {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.each-task-card-info {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.each-task-card-info span {
+    font-size: 14px;
+    color: #333333;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.each-task-card-action {
+    display: flex;
+    align-items: center;
+    margin-top: 15px; /* Increase top margin for better separation from other sections */
+}
+
+.each-task-card-action .MuiFormControl-root {
+    // flex: 1; 
+    margin-right: 10px;
+}
+
+.update-button {
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    width: auto;
+    padding: .5rem;
+    border-radius: 4px;
+   
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+.update-button:hover {
+    background-color: #0056b3;
+}

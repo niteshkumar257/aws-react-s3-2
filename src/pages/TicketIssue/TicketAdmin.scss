@@ -1,0 +1,78 @@
+.ticketAdmin-container
+{
+      display: flex;
+    
+     .ticketAdmin{
+      flex: 4;
+    
+    
+      .ticketAdmin-page
+      {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+      
+            padding: 1rem;
+         
+         .ticketAdminTableContainer{
+           
+          width: 100%;
+            height: auto;
+            display:flex;
+            justify-content:center;
+            align-items: center;
+            flex-direction: column;
+            row-gap:15;
+            .teacherAdminContainer{
+
+                  width:100%;
+                 height: auto;
+                  display:flex;
+                  justify-content: center;
+                  align-items: center;
+                  padding-top: 10;
+                  padding-bottom: 10;
+                  margin-top: 10;
+                  margin-bottom: 10;
+                  flex-direction: column;
+                  .headingContainer{
+                        width: 100%;
+                        height: 80px;
+                        display: flex;
+                        justify-content: flex-start;
+                        margin-bottom: 10px;
+                        align-items: center;
+                  }
+                  .inputContainer{
+                        width:100%;
+                        height: 100px;
+                       
+                       
+                       display: flex;
+                       padding-left: 25px;
+                       justify-content: flex-start;
+                       align-items: center;
+                  }
+            }
+            .parentAdminContainer{
+                  .headingContainer{
+                        height: 70px;
+                        display: flex;
+                        justify-content: flex-start;
+                        align-items: center;
+                  }
+            }
+         }
+      }
+     }
+}
+.tableContainer{
+      width: 99%;
+      padding: 10px;
+      display: flex;
+      flex-direction: column;
+      row-gap: 20px;
+      justify-content: flex-start;
+      align-items: center;
+      height: auto;
+}

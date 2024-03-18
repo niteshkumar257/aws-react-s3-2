@@ -1,0 +1,37 @@
+$main-color:#1377C0;
+$container-bottom-border:.2px solid rgb(227, 227, 227);;
+
+.SingleMentorPage-container
+{
+    display: flex;
+   
+    .SingleMentor{
+        flex: 4; 
+
+    }
+}
+.topContainer{
+    height:250px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    column-gap: 20;
+    .leftContainer{
+        flex:1;
+        height: inherit;
+       
+    }
+    .rightContainer{
+        flex:4;
+        height: inherit;
+       
+    }
+    
+}
+.bottomContainer{
+    height:170px;
+    width: 100%;
+   
+}

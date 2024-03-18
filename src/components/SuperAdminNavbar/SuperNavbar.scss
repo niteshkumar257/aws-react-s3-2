@@ -1,0 +1,122 @@
+$main-color:#1377C0;
+.navbar
+{
+    flex: 4;
+    border-bottom: 1px solid rgb(227, 227, 227);
+     display: flex;
+     align-items:center;
+     justify-content: center;
+    height: 10vh;
+    padding: 0px 15px;
+  
+   
+   
+    .wrapper
+{
+   
+    display: flex;
+    width: 100%;
+    align-items: center;
+    column-gap: 20px;
+    
+  
+    
+  .logo{
+    display: flex;
+    column-gap: 10px;
+    align-items: center;
+   justify-content: flex-start;
+   border-right: .5px solid rgb(225, 225, 225);
+   
+   
+    flex: 0.7;
+
+    
+        img{
+            height: 40px;
+            width: 40px;
+            border-radius: 50%;
+            object-fit: cover;
+             
+          
+            
+        }
+        span{
+            height: 1.4rem;
+            color: black;
+        }
+    
+
+  }
+    
+    .section{
+
+         display: flex;
+         flex: 5;
+        column-gap: 10px;
+        justify-content: space-between;
+     
+       
+        .search
+        {
+            
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            margin-left: 1.7rem;
+        justify-content: space-between;
+        input {
+            width: 45vw;
+            height: 5.5vh;
+         border-radius: 9px 0px 0px 9px;
+        
+         
+         background-color: white;
+            border: 1.5px solid rgb(193, 191, 191);
+            border-right: none;
+            &::placeholder{
+                color: rgb(215, 214, 214);
+            }
+        }
+        .search-icon
+        {
+            background-color:$main-color;
+            height: 6.3vh;
+            display: flex;
+            width: 6vh;
+            justify-content:center;
+            align-items: center;
+            border-radius: 0px 9px 9px 0px;
+            .searchIcon
+            {
+                font-size: 26px;
+                color: rgb(255, 255, 255);
+                cursor: pointer;
+            }
+        }
+        
+    }
+    .navbar-items
+    {
+        width: 10vw;
+        
+        .navbar-items-item{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+           
+           .btn
+           {
+            text-decoration: none;
+            height: 1.6rem;
+            color: black;
+           }
+          
+           
+        }
+        
+    }
+}
+
+}
+}

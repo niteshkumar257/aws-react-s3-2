@@ -1,0 +1,191 @@
+$main-color:#1377C0;
+.studentForm-container
+{
+      display: flex;
+     
+     .studentForm{
+      flex: 4;
+      .studentForm-page
+      {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+          
+        .studentForm-page-container{
+      
+            display: flex;
+            flex-direction: column;
+            height: auto;
+      row-gap: 20px;
+            width: 100%;
+            .student-page-container-heading{
+                  
+                  span{
+                        font-size: 1.5rem;
+                        font-weight: 600;
+                        color: rgb(147, 147, 147);
+                  }
+            }
+            .student-info-detail-container{
+                  width: 100%;
+                
+                  display: flex;
+                  flex-direction: column;
+              gap:12px;
+                 border-radius: 9px;
+              
+           .student-info-detail-student-container{
+            box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+            border-radius: 9px;
+            display: flex;
+           flex-direction: column;
+          padding-top: 10px;
+           height: 70vh;
+           width: 100%;
+           gap: 12px;
+
+           
+           .student-info-detail-student-container-subheading{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            padding-left: 1rem;
+           
+           }
+           .student-info-detail-student-container-textfield{
+           
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            .student-info-section{
+                
+                  width: 98%;
+                  display: flex;
+                 
+                  gap: 25px;
+            }
+          
+           }
+          
+
+           }
+           .student-info-detail-parent-container{
+            box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+            border-radius: 9px;
+            display: flex;
+           flex-direction: column;
+           height:auto;
+           width: 100%;
+           gap: 20px;
+           padding-bottom: 1rem;
+           .student-info-detail-parent-container-subheading{
+            margin-top: 10px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            padding-left: 1rem;
+        }
+        .student-info-detail-parent-container-textfield{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+         
+            .parent-info-section{
+                
+                  width: 98%;
+                  display: flex;
+                 
+                  gap: 25px;
+            }
+
+        }
+         
+           }
+           .student-info-detail-fee-container{
+            box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+            border-radius: 9px;
+            display: flex;
+            flex-direction: column;
+            height:auto;
+            min-height: 50vh;
+            width: 100%;
+            gap: 20px;
+            .student-info-detail-fee-container-subheading{
+                  margin-top: 10px;
+                  width: 100%;
+                  display: flex;
+                  align-items: center;
+                  padding-left: 1rem;
+              }
+              .student-info-detail-fee-container-textfield{
+                  display: flex;
+                  flex-direction: column;
+                  align-items: center;
+                  justify-content: center;
+                  gap: 12px;
+            
+               
+                  .fee-info-section{
+                      
+                        width: 98%;
+                        display: flex;
+                        flex-direction: column;
+                       
+                        gap: 40px;
+                        .fee-info-section-installment{
+                              display: flex;
+                        column-gap: 30px;
+                        }
+                        .fee-info-section-installment-checkbox--date{
+                              display: flex;
+                        column-gap: 10px;
+                        height: 7vh;
+                        }
+                  }
+      
+              }
+            
+          
+           
+           }
+      }
+          
+        }
+
+         
+      }
+     }
+}
+.subheading{
+      font-size: 1rem;
+      font-weight: 500;
+      color: rgb(56, 56, 56);
+}
+.buttonSubmit{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 600;
+      font-size: 1rem;
+      width: 100px;
+      height: 50px;
+      border-radius: 9px;
+      color: white;
+    
+      button{
+            width: 100px;
+            height: 50px;  
+            background-color:$main-color;
+            border: none;
+            border-radius: 9px;
+            color: white;
+            font-size: 1rem;
+            font-weight: 600;
+            text-decoration: none;
+      }
+
+}

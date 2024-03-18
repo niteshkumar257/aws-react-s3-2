@@ -1,0 +1,36 @@
+.document {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .page {
+    padding: 30px;
+  }
+  
+  .header {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  
+  .table {
+    width: auto;
+    border: 1px solid black;
+  }
+  
+  .table-row {
+    display: flex;
+    border-bottom: 1px solid black;
+    padding: 5px;
+  }
+  
+  .header-row {
+    font-weight: bold;
+    background-color: #f0f0f0;
+  }
+  .table-cell {
+    flex: 1;
+    text-align: center;
+    padding: 5px;
+  }
+  

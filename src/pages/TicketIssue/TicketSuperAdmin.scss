@@ -1,0 +1,18 @@
+.ticketSuperAdmin-container
+{
+      display: flex;
+    
+     .ticketSuperAdmin{
+      flex: 4;
+      // width: 85%;
+      .ticketSuperAdmin-page
+      {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+            padding: 2rem;
+            background-color:rgb(211, 211, 211);
+         
+      }
+     }
+}

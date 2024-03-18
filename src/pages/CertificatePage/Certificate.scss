@@ -1,0 +1,15 @@
+$main-color:#1377C0;
+.certificate-container{
+    display: flex;
+    width: 100%;
+    .certificate{
+        flex: 4;
+    }
+    .all-certificate{
+        margin-left: 10px;
+        margin-right: 10px;
+        .form-container{
+            width: 98%;
+        }
+    }
+}

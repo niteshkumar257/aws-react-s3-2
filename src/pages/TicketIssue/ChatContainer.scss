@@ -1,0 +1,66 @@
+.message-container {
+    height: 300px;
+    overflow-y: scroll;
+    border: 1px solid #ccc;
+    padding: 10px;
+    
+    .message-left { 
+        display: flex;
+        justify-content: right;
+        width: 100%;
+        margin-bottom: 10px;  
+        color: white;
+        .message {
+            font-size: 16px;
+            max-width: 60%;
+            width: fit-content;
+            background-color: #03cdff;
+            padding: 5px;        
+            border-radius: 5px; 
+        }
+    }
+
+    .message-right {
+        display: flex;
+        justify-content: left;
+        width: 100%;
+        margin-bottom: 10px;  
+        // color: white;
+        .message {
+            font-size: 16px;
+            max-width: 60%;
+            width: fit-content;
+            background-color: #ffec1c;
+            padding: 5px;        
+            border-radius: 5px; 
+        }
+    }
+  }
+  
+  .input-container {
+    display: flex;
+    margin-top: 5px;
+    margin-bottom: 10px;
+  
+    input {
+      flex: 1;
+      padding: 5px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      margin-right: 10px;
+    }
+  
+    button {
+      padding: 5px 10px;
+      background-color: #4caf50;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+  
+      &:hover {
+        background-color: #45a049;
+      }
+    }
+  }
+  

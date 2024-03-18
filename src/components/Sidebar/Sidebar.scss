@@ -1,0 +1,273 @@
+$main-color: #1377c0;
+$main-color: #1377c0;
+$row-gap: 13px;
+$logo-container-height: 10vh;
+$border-color: rgb(177, 177, 177);
+$font-size: 16px;
+$menuItem-gap: 5px;
+.sidebar {
+  display: flex;
+  flex-direction: columns;
+  position: sticky;
+  top: 0;
+  width: 220px;
+  border-right: 0.5px solid rgb(225, 225, 225);
+  justify-content: center;
+  height: 100vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  transition: width 0.3s ease-in-out;
+  .sidebar-container {
+    width: 100%;
+    height: 100vh;
+
+    .logo-container {
+      width: 100%;
+
+      height: 10vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-bottom: 0.5px solid rgb(196, 196, 196);
+      gap: 17px;
+      padding-left: 7px;
+      gap: 8px;
+      .logo-container-heading {
+        display: flex;
+        height: 6vh;
+        justify-content: center;
+        align-items: center;
+        width: 12vw;
+        gap: 10px;
+        img {
+          height: 30px;
+          width: 30px;
+          border-radius: 50%;
+          object-fit: contain;
+          
+        }
+        span {
+          font-weight: 700;
+          color: #000000;
+        }
+      }
+
+      .menu-icon {
+        margin-right: 10px;
+        height: 7vh;
+        cursor: pointer;
+        color: #0890cb;
+        font-size: 28px;
+        font-weight: 500;
+        margin-top: 5px;
+      }
+    }
+    .menuItems-container {
+      display: flex;
+      width: 100%;
+
+      justify-content: center;
+      align-items: center;
+      padding-top: 1rem;
+
+      .homeNavigate {
+        width: 90%;
+        cursor: pointer;
+        display: flex;
+        column-gap: 20px;
+        height: 5vh;
+        text-decoration: none;
+        .item {
+          //    padding: 0.5rem 0.5rem 0.5rem 1rem;
+          display: flex;
+          gap: $menuItem-gap;
+          justify-content: flex-start;
+          align-items: center;
+          cursor: pointer;
+          padding-left: 1rem;
+
+          .link-text {
+            cursor: pointer;
+            text-decoration: none;
+            color: #000000;
+            font-weight: 400;
+            //  &:hover{
+            //     color: white;
+            //  }
+          }
+          .icon {
+            font-size: 20px;
+            cursor: pointer;
+            color: black;
+            font-weight: 400;
+            //  &:hover{
+            //     color: white;
+            //  }
+          }
+        }
+      }
+
+      .menu-item {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: $row-gap;
+        flex-direction: column;
+        .items {
+          width: 95%;
+          display: flex;
+          // justify-content:flex-start;
+          align-items: center;
+          height: 5vh;
+          .item {
+            //    padding: 0.5rem 0.5rem 0.5rem 1rem;
+            display: flex;
+            gap: 10px;
+            // justify-content: center;
+            // align-items: center;
+            cursor: pointer;
+            padding-left: 20px;
+            padding-right: 2px;
+            transition: width 0.3s ease-in-out;
+
+            // padding-left:1rem;
+            .link-text {
+              cursor: pointer;
+              text-decoration: none;
+              //  color: #000000;
+              font-weight: 400;
+              font-size: 20px;
+              //  &:hover{
+              //     color: white;
+              //  }
+            }
+            .icon {
+              font-size: 20px;
+              cursor: pointer;
+              padding-top: 2.4px;
+              //  color: black;
+              font-weight: 400;
+              //  &:hover{
+              //     color: white;
+              //  }
+            }
+          }
+        }
+        .btn {
+          width: 85%;
+          cursor: pointer;
+          display: flex;
+          gap: 30px;
+          height: 7vh;
+          text-decoration: none;
+          .item {
+            //    padding: 0.5rem 0.5rem 0.5rem 1rem;
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            padding-left: 1rem;
+
+            .link-text {
+              cursor: pointer;
+              text-decoration: none;
+              //  color: #000000;
+              font-weight: 400;
+              //  &:hover{
+              //     color: white;
+              //  }
+            }
+            .icon {
+              font-size: 20px;
+              cursor: pointer;
+              // color: black;
+              font-weight: 400;
+              //  &:hover{
+              //     color: white;
+              //  }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.sidebar-toggle {
+  width: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 0.2;
+}
+.items {
+  &:hover {
+    background-color: #c7c7c7;
+    color: rgb(0, 0, 0);
+    border-radius: 9px;
+  }
+}
+.active {
+  background-color: $main-color;
+  color: white;
+  border-radius: 9px;
+}
+.item-toggle {
+  width: 120px;
+
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  padding-left: 0px;
+  cursor: pointer;
+  .link-text {
+    cursor: pointer;
+    text-decoration: none;
+    color: #000000;
+    //  &:hover{
+    //     color: white;
+    //  }
+  }
+  .icon {
+    font-size: 20px;
+    cursor: pointer;
+    color: black;
+    //  &:hover{
+    //     color: white;
+    //  }
+  }
+  span {
+    font-size: 17px;
+    cursor: pointer;
+    font-weight: 500;
+    color: #000000;
+    // &:hover{
+    //     color: white;
+    //  }
+  }
+}
+.items.active .link-text {
+  color: rgb(255, 255, 255);
+  font-size: $font-size;
+}
+.items.active .link-text-toggle {
+  color: rgb(255, 255, 255);
+  font-size: $font-size;
+}
+.items.active .icon {
+  color: rgb(255, 255, 255);
+  font-size: $font-size;
+}
+
+.sidebar::-webkit-scrollbar {
+  display: none;
+}
+
+.title {
+  margin: 0px;
+  width: 100%;
+}

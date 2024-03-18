@@ -1,0 +1,101 @@
+.teachertask-container
+{
+      display: flex; 
+    
+     .teacherTask{
+        flex: 4; 
+     }
+}
+
+.chapter-details{
+    width: 90%;
+    height: 20%;
+    display: flex;
+    margin: auto; 
+    font-weight: 600;
+    justify-content: space-between; 
+    .first-para { 
+        width: 60%;
+    }
+    p{
+        font-size: 20px;
+    } 
+}
+
+.chapter-details2{
+    width: 90%;
+    height: 20%;
+    display: flex;
+    margin: auto; 
+    font-weight: 600;
+    justify-content: space-between; 
+    p{
+        font-size: 20px;
+    } 
+}
+.task-card-header-container{
+    height: auto;
+    padding: .25rem 0rem;
+    display: flex;
+    justify-content: flex-start;
+    
+    width: 90%;
+}
+
+.task-list-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem;
+    row-gap: 1rem;
+    padding-top:2rem ;
+}
+.task-card-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    height:100px;
+    padding: 15px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+ 
+}
+
+.task-info-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    
+}
+
+.task-info-container span {
+   
+        font-size: 14px;
+        color: #333333;
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    
+}
+.task-action-container{
+  
+    display: flex;
+    justify-content: flex-end;
+}
+.task-action-container button {
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 15px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.task-action-container button:hover {
+    background-color: #0056b3;
+}
